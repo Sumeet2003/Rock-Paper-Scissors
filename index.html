@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="wrapper justified-center">
+        <div class="score-board justified-center">
+          <span id="user-score" dir="ltr">0</span>
+          <span class="score-divider">:</span>
+          <span id="comp-score">0</span>
+        </div>
+        <div class="msg justified-center">
+          <h3 id="msg">Make your move!</h3>
+        </div>
+        <div class="options justified-center">
+          <span id="scissors" class="justified-center" onclick="scissorsOnClick('scissors', this)"><p>✌</p></span>
+          <span id="rock" class="justified-center" onclick="rockOnClick('rock', this)"><p>👊</p></span>
+          <span id="paper" class="justified-center" onclick="paperOnClick('paper', this)"><p>🖐</p></span>
+        </div>
+      </div>
+
+      <div class="user-side justified-center">
+        <span class="user justified-center"><p>USER</p></span>
+        <span id="user-result" class="justified-center"><p class="waiter" id="user-waiter">👋</p></span>
+      </div>
+      <div class="comp-side justified-center">
+        <span class="comp justified-center"><p>COMP.</p></span>
+        <span id="comp-result" class="justified-center"><p class="waiter" id="comp-waiter">👋</p></span>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
